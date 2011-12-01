@@ -5,7 +5,7 @@
 from distutils.core import setup
 from uploadify import NAME, VERSION
 
-setup(name='django-uploadify',
+setup(
     name=NAME,
     version=VERSION,
     description='Django integration of Uploadify jQuery plugin.',
