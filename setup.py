@@ -3,10 +3,10 @@
 #This project forked from http://github.com/gsiegman/django-uploadify
 
 from distutils.core import setup
-from uploadify import NAME, VERSION
+from uploadify import PROJECT, VERSION
 
 setup(
-    name=NAME,
+    name=PROJECT,
     version=VERSION,
     description='Django integration of Uploadify jQuery plugin.',
     author='Vlad Frolov',
