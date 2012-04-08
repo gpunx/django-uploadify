@@ -1,5 +1,5 @@
 from django.dispatch import Signal
-from django.http import Http404
+from django.http import Http404, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from misc.json_encode import json_response
@@ -24,4 +24,6 @@ def upload(request, *args, **kwargs):
         for received, response in received_list:
             if response is not None:
                 return json_response(response)
+            else:
+                return HttpResponse("Success")
     raise Http404
