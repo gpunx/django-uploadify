@@ -25,5 +25,5 @@ def upload(request, *args, **kwargs):
             if response is not None:
                 return json_response(response)
             else:
-                return HttpResponse("Success")
+                return HttpResponse("Response Not Found")
     raise Http404
